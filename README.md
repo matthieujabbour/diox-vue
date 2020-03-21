@@ -1,6 +1,6 @@
 # diox-vue
 
-Official diox connector for VueJS
+Official [diox](https://github.com/matthieujabbour/diox) connector for VueJS
 
 ## Installation
 
