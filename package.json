@@ -1,23 +1,61 @@
 {
   "name": "diox-vue",
-  "version": "0.0.3",
-  "description": "Official Diox connector for VueJS",
-  "repository": "https://github.com/matthieujabbour/diox",
+  "version": "TRAVIS_TAG",
+  "description": "Official diox connector for VueJS",
+  "repository": "https://github.com/matthieujabbour/diox-vue",
   "bugs": "https://github.com/matthieujabbour/diox-vue/issues",
   "main": "./main.js",
-  "private": true,
-  "keywords": [],
-  "license": "UNLICENSED",
+  "contributors": [
+    {
+      "name": "Matthieu Jabbour",
+      "email": "matthieu.jabbour@gmail.com",
+      "homepage": "https://github.com/matthieujabbour"
+    }
+  ],
+  "keywords": [
+    "diox",
+    "state",
+    "store",
+    "management",
+    "vuejs",
+    "typescript",
+    "javascript",
+    "frontend"
+  ],
+  "license": "MIT",
   "devDependencies": {
-    "typescript-dev-kit": "^0.0.19"
+    "typescript-dev-kit": "^2.1.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/typescript-dev-kit/main.js"
+    ]
   },
   "dependencies": {
-    "vue": "^2.6.10"
+    "diox": "^1.0.6",
+    "vue": "^2.6.11"
+  },
+  "tsDevKitConfig": {
+    "target": "node",
+    "entry": {
+      "main": "./scripts/main.ts"
+    },
+    "srcPath": "src",
+    "distPath": "dist",
+    "banner": "/**\n * Copyright (c) Matthieu Jabbour.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */",
+    "env": {
+      "development": {
+        "NODE_ENV": "\"development\""
+      },
+      "production": {
+        "NODE_ENV": "\"production\""
+      }
+    }
   },
   "scripts": {
-    "start": "cd node_modules/typescript-dev-kit/ && node scripts/start",
+    "dev": "cd node_modules/typescript-dev-kit/ && node scripts/dev",
     "build": "cd node_modules/typescript-dev-kit/ && node scripts/build",
     "test": "cd node_modules/typescript-dev-kit/ && node scripts/test",
-    "doc": "node_modules/.bin/typedoc --out ./doc/ src/ --exclude \"**/__+(tests|mocks)__/**\""
+    "doc": "node_modules/.bin/typedoc --out ./docs/ src/ --exclude \"**/__+(tests|mocks)__/**\""
   }
 }
