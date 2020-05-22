@@ -5,7 +5,7 @@
 
 import Vue from 'vue';
 import { Store } from 'diox';
-import connect from 'scripts/main';
+import connect from 'scripts/connect';
 
 /** Any valid JavaScript primitive. */
 type mixed = any; // eslint-disable-line @typescript-eslint/no-explicit-any

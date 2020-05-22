@@ -18,7 +18,6 @@ yarn add diox-vue
 ## Usage
 
 ```typescript
-
 // main.js
 // --------------------------
 
@@ -33,7 +32,7 @@ const app = new Vue({
       <counter></counter>
     </div>
   `
-})
+});
 
 
 // store.js
@@ -49,18 +48,7 @@ store.register('my-module', {
           count: state.count + 1,
         };
       default:
-        return Object.assign({}, state || { count: 0 }};
-    }
-  },
-  dispatcher: ({ mutate, hash }, action) => {
-    switch (action) {
-      case 'incrementAsync':
-        setTimeout(() => {
-          mutate(hash, 'INCREMENT');
-        }, 1000);
-        break;
-      default:
-        break;
+        return { ...state || { count: 0 } };
     }
   },
 });
