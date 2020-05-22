@@ -1,6 +1,6 @@
 {
   "name": "diox-vue",
-  "version": "TRAVIS_TAG",
+  "version": "1.0.0",
   "description": "Official diox connector for VueJS",
   "repository": "https://github.com/matthieujabbour/diox-vue",
   "bugs": "https://github.com/matthieujabbour/diox-vue/issues",
