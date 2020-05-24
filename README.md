@@ -1,3 +1,7 @@
+<div align="center">
+  <img width="320" height="160" src="https://repository-images.githubusercontent.com/185218115/30c47e00-9dd5-11ea-839d-51d45827eac3">
+<br>
+
 # diox-vue
 
 Official [diox](https://github.com/matthieujabbour/diox) connector for VueJS.
@@ -7,6 +11,8 @@ Official [diox](https://github.com/matthieujabbour/diox) connector for VueJS.
 [![npm version](https://badge.fury.io/js/diox-vue.svg)](https://badge.fury.io/js/diox-vue)
 [![Downloads](https://img.shields.io/npm/dm/diox-vue.svg)](https://www.npmjs.com/package/diox-vue)
 
+</div>
+<br>
 
 ## Installation
 
